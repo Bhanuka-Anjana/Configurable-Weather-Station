@@ -2,42 +2,39 @@
 
 This weather data displaying system is designed to provide real-time weather information based on the user's location. It utilizes the OpenWeather API to fetch weather data and display it in a user-friendly format.
 
-<img text-align="left" height="300px" width="400px" alt="Github" src="https://github.com/Bhanuka-Anjana/Configurable-Weather- Station/blob/main/images/processor%20animation.gif" />  
+![Processor Animation](https://github.com/Bhanuka-Anjana/Configurable-Weather-Station/blob/main/images/processor%20animation.gif) 
+##
 
-<img text-align="right" height="300px" width="400px" alt="Github" src="https://github.com/Bhanuka-Anjana/Configurable-Weather-Station/blob/main/images/processor%20animation.gif" />
+<img align="left" height="300px" width="400px" alt="Github" src="https://github.com/Bhanuka-Anjana/Configurable-Weather-Station/blob/main/images/setup.jpg" />
 
-<be>
 ## Features
 
-- Customizable User Location: User can  the user's location using geolocation services.
-- Configurability: The code is fully configurable, allowing users to customize various aspects of the system.
-- Real-time Data: The system fetches weather data from the OpenWeather API, ensuring that the displayed information is always up-to-date.
-- User-friendly Interface: The weather information is presented in a visually appealing and easy-to-understand format.
+- **Customizable User Location:** Users have the flexibility to configure the longitude and latitude of their location for accurate weather data retrieval.
+- **Configurability:** The code is highly customizable, allowing users to adapt it to different WiFi networks and display specifications. For instance, adjustments can be made for displays with dimensions other than the default 128x32 pixels.
+- **Real-time Data:** The system continuously fetches weather data from the [OpenWeather API](https://openweathermap.org/) at intervals of 5 seconds, ensuring that the displayed information remains up-to-date.
+- **User-friendly Interface:** Weather information is presented in a visually appealing and easy-to-understand format, enhancing user experience and accessibility.
+##
 
 ## Usage
 
-To use this weather data displaying system, follow these steps:
+To utilize this weather data displaying system, proceed as follows:
 
-1. Clone the repository and navigate to the project directory.
-2. Configure the necessary API credentials in the configuration file.
-3. Run the application and grant location access when prompted.
-4. The system will automatically fetch weather data based on your location and display it on the screen.
-
-## Configuration
-
-The system can be configured by modifying the configuration file. The following parameters can be customized:
-
-- API Key: The API key for accessing the OpenWeather API.
-- Units: The unit system to be used for displaying weather data (e.g., Celsius, Fahrenheit).
-- Language: The language in which the weather information should be displayed.
+1. **Setup Hardware:** Begin by setting up your ESP-32 and OLED Display. If you're using a display with different specifications, ensure to customize the code accordingly by modifying parameters such as `SCREEN_WIDTH` and `SCREEN_HEIGHT`.
+   
+   ```cpp
+   #define SCREEN_WIDTH 128 // OLED display width, in pixels
+   #define SCREEN_HEIGHT 32 // OLED display height, in pixels
+2. **Clone Repository and Upload Code**: Clone the repository and upload the provided code to your ESP board.
+3. **Configure Credentials**: Connect to the "AccesspointAP" network to configure necessary API and WiFi credentials. This initial setup is facilitated by the WiFi Manager Library.
+4. **Automatic Data Fetching**: Once configured, the system will automatically retrieve weather data based on the user's location and display it on the OLED screen.
+5. **Configuration Persistence**: Configuration settings are automatically saved after initial setup, eliminating the need for repeated configuration in subsequent uses.
 
 ## Dependencies
 
 This weather data displaying system relies on the following dependencies:
 
-- OpenWeather API: Provides access to real-time weather data.
-- Geolocation Services: Used to determine the user's location.
+-  <a href="https://openweathermap.org/">Open-weather API </a>: Provides access to real-time weather data.
+-  <a href="https://github.com/tzapu/WiFiManager">Wifi Manager Library</a>: Facilitates initial configuration by managing WiFi credentials.
 
 ## License
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT), offering users the freedom to use, modify, and distribute the software as per the terms of the license agreement.
