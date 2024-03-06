@@ -1,10 +1,15 @@
-# Weather Data Displaying System
+# Display Your Location's Weather Data
 
 This weather data displaying system is designed to provide real-time weather information based on the user's location. It utilizes the OpenWeather API to fetch weather data and display it in a user-friendly format.
 
+<img text-align="left" height="300px" width="400px" alt="Github" src="https://github.com/Bhanuka-Anjana/Configurable-Weather- Station/blob/main/images/processor%20animation.gif" />  
+
+<img text-align="right" height="300px" width="400px" alt="Github" src="https://github.com/Bhanuka-Anjana/Configurable-Weather-Station/blob/main/images/processor%20animation.gif" />
+
+<be>
 ## Features
 
-- User Location: The system automatically detects the user's location using geolocation services.
+- Customizable User Location: User can  the user's location using geolocation services.
 - Configurability: The code is fully configurable, allowing users to customize various aspects of the system.
 - Real-time Data: The system fetches weather data from the OpenWeather API, ensuring that the displayed information is always up-to-date.
 - User-friendly Interface: The weather information is presented in a visually appealing and easy-to-understand format.
